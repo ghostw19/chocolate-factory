@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff3e0;
+  margin: 0;
+  padding: 16px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.stats {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#chocolate {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+#chocolate:active {
+  transform: scale(0.95);
+}
+
+.shop {
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #8d6e63;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+}
+
+.bonus {
+  margin-top: 10px;
+  font-size: 20px;
+  color: red;
+  animation: blink 1s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
